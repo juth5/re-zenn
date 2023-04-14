@@ -49,16 +49,13 @@ console.log(tagNames);
 
 ```js
 let tags = ["HTML", "CSS", "JavaScript"];
+let SEPARATOR = ' ';
 
-tags = tags.map(tag => '#' + tag);
-console.log(tags);
-// => ["#HTML", "#CSS", "#JavaScript"];
-tags = tags.join(' ');
+tags = tags.map(t => `#${t}`).join(SEPARATOR);
 console.log(tags);
 // => #HTML #CSS #JavaScript;
 ```
-
-コードがすっきりしました。また、半角スペースを消されるという問題を考慮する必要もなくなりました。
+コードがすっきりしました。
 
 # 最後に
 チーム開発では、可読性がとても大切になります。参考にしていただけると幸いです。
