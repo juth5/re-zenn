@@ -11,7 +11,7 @@ published: false
 cssを用いて、角丸で縁(border)がグラデーションのボタンを作りたい時はありませんか？これを作るには、少し工夫が必要みたいです。
 ![](https://storage.googleapis.com/zenn-user-upload/33ee23676595-20230415.png)
 # 実装例
-まずは、角丸ではない縁がグラデーションのボタンを作成してみます。
+私は、縁がグラデーションのボタンを作り、その角を丸めれば実現できると考え以下のようなボタンを作成しました。
 ![](https://storage.googleapis.com/zenn-user-upload/32c34838cc67-20230415.png)
 
 1. HTMLでボタンを作成
@@ -31,8 +31,7 @@ cssを用いて、角丸で縁(border)がグラデーションのボタンを作
 }
 ```
 
-これを角丸にしようと思うと、.buttonクラスに以下のようにborder-radiusを指定すれば実現できると思いませんか？
-※角を丸くするために、9999pxを指定。
+私は、角を丸めるには.buttonクラスに以下のようにborder-radiusを指定すれば実現できると思いました。
 ```
 .button {
   width: 100px;
@@ -41,16 +40,16 @@ cssを用いて、角丸で縁(border)がグラデーションのボタンを作
   border-image: linear-gradient(to right, #00ffd5 0%, #0f3dd7 100%);
   border-image-slice: 1; 
   text-align: center;
-  <!-- この箇所を追記して角を丸めようと考えます -->
+  <!-- この箇所を追記 -->
   border-radius: 9999px;
 }
 ```
-ですが、これでは丸くなりません。
+ですが、これでは丸くなりませんでした。
 
 ![](https://storage.googleapis.com/zenn-user-upload/32c34838cc67-20230415.png)
 
 
-実現の方法として、グラデーションが一面にかかった要素にグラデーションがかかっていない要素を被せることで実現できます。
+調べた結果、グラデーションが一面にかかった要素にグラデーションがかかっていない要素を被せることで実現できました。
 
 HTML
 ```
@@ -59,14 +58,14 @@ HTML
 </div>
 ```
 CSS
-```js
+```
 .outer-button {
   width: 100px;
   height: 30px;
-  // paddingの値がborderの太さ
-  padding: 2px;
   background:  linear-gradient(to right, #00ffd5 0%, #0f3dd7 100%);
   border-radius: 9999px;
+  // paddingの値がborderの太さ
+  padding: 2px;
 }
 
 .inner-button {
@@ -80,7 +79,7 @@ CSS
 グラデーションが一面にかかった要素(.outer-buttonクラスが当たっている要素)
 ![](https://storage.googleapis.com/zenn-user-upload/557fe15396af-20230415.png)
 
-その上に、グラデーションがかかっていない要素を被せると実現ができます。(.inner-buttonクラスが当たっている要素)
+その上に、グラデーションがかかっていない要素(.inner-buttonクラスが当たっている要素)を被せるとで実現ができました。
 
 ![](https://storage.googleapis.com/zenn-user-upload/33ee23676595-20230415.png)
 
