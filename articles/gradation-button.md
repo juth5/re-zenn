@@ -4,7 +4,7 @@ emoji: "🟡"
 type: "tech"
 topics: ["HTML", "CSS", "rabee"]
 publication_name: "rabee"
-published: true
+published: false
 ---
 
 # 初めに
@@ -88,3 +88,4 @@ CSS
 ボーダーをグラデーションにしたい時は、border-imageプロパティを使えば実現できますが、角丸にするためのborder-radiusプロパティは使えないみたいです。
 今回の方法は、グラデーションがかかった背景の上にもう一つ要素を重ねることでグラデーションのボーダーが引かれているように見せています。
 別の方法があれば教えていただきたいです。
+https://zenn.dev/rabee/articles/riot-v3-opts-naming-rules?redirected=1
