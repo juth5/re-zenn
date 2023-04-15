@@ -1,5 +1,5 @@
 ---
-title: "「変数名で認識のズレをなくし、半角スペースが消されないようにしよう」"
+title: "半角スペースを変数化して消されないようにしよう"
 emoji: "🖋"
 type: "tech"
 topics: ["HTML", "JavaScript", "rabee"]
