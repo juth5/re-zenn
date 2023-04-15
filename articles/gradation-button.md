@@ -30,8 +30,7 @@ cssを用いて、角丸で縁(border)がグラデーションのボタンを作
   text-align: center;
 }
 ```
-
-私は、角を丸めるには.buttonクラスに以下のようにborder-radiusを指定すれば実現できると思いました。
+角を丸めるには.buttonクラスに以下のようにborder-radiusを指定すれば実現できると思いました。
 ```
 .button {
   width: 100px;
