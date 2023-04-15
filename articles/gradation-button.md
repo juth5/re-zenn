@@ -1,5 +1,5 @@
 ---
-title: "CSSで角丸で縁がグラデーションのボタンを作る方法"
+title: "CSSで縁(ボーダー)がグラデーションの角丸ボタンを作る方法"
 emoji: "🖋"
 type: "tech"
 topics: ["HTML", "CSS", "rabee"]
