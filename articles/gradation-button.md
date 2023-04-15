@@ -4,14 +4,14 @@ emoji: "🟡"
 type: "tech"
 topics: ["HTML", "CSS", "rabee"]
 publication_name: "rabee"
-published: false
+published: true
 ---
 
 # 初めに
 CSSを用いて、ボーダーがグラデーションの角丸ボタンを作りたい時はありませんか？これを作るには、少し工夫が必要みたいです。
 ![](https://storage.googleapis.com/zenn-user-upload/33ee23676595-20230415.png)
 # 実装例
-私は、まずボーダーがグラデーションのボタンを作り、その角を丸めれば実現できると考え以下のようなボタンを作成しました。
+私は、まずボーダーがグラデーションの四角のボタンを作り、その角を丸めれば実現できると考え以下のようなボタンを作成しました。
 ![](https://storage.googleapis.com/zenn-user-upload/32c34838cc67-20230415.png)
 
 HTMLでボタンを作成
@@ -30,7 +30,7 @@ CSSでスタイルを設定
   text-align: center;
 }
 ```
-角を丸めるには.buttonクラスに以下のようにborder-radiusを指定すれば実現できると考えました。
+角を丸めるにはbuttonクラスに以下のようにborder-radiusプロパティを付与すれば実現できると考えました。
 ```
 .button {
   width: 100px;
@@ -48,7 +48,7 @@ CSSでスタイルを設定
 ![](https://storage.googleapis.com/zenn-user-upload/32c34838cc67-20230415.png)
 
 
-別の方法を調べた結果、グラデーションが一面にかかった要素にグラデーションがかかっていない要素を被せることで実現できました。
+別の方法を調べた結果、グラデーションが一面にかかった要素にグラデーションがかかっていない要素を重ねることで実現できました。
 以下は実装例です。
 HTML
 ```
