@@ -1,6 +1,6 @@
 ---
 title: "CSSでボーダーがグラデーションの角丸ボタンを作る方法"
-emoji: "🖋"
+emoji: "🟡"
 type: "tech"
 topics: ["HTML", "CSS", "rabee"]
 publication_name: "rabee"
