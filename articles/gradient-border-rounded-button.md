@@ -4,7 +4,7 @@ emoji: "🟡"
 type: "tech"
 topics: ["HTML", "CSS", "rabee"]
 publication_name: "rabee"
-published: false
+published: true
 ---
 
 # 初めに
