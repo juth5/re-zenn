@@ -83,6 +83,8 @@ CSS
 ![](https://storage.googleapis.com/zenn-user-upload/b9d730b73da9-20230418.png)
 ボーダーの太さは、outer-buttonクラスが当たっている要素にpaddingを付与することで調整ができます。
 
+https://runstant.com/fukagawa/projects/20949fc8
+
 # 最後に
 ボーダーをグラデーションにしたい時は、border-imageプロパティを使えば実現できますが、角丸にするためのborder-radiusプロパティは使えないみたいです。
 今回の方法は、グラデーションがかかった背景の上にもう一つ要素を重ねることでグラデーションのボーダーが引かれているように見せています。
