@@ -29,7 +29,7 @@ CSSでスタイルを設定
   text-align: center;
 }
 ```
-角を丸めるにはbuttonクラスに以下のようにborder-radiusプロパティを付与すれば実現できると考えました。
+角を丸めるにはbuttonクラスに以下のようにborder-radiusプロパティを付与すれば実現できることがわかりました。
 ```
 .button {
   width: 100px;
