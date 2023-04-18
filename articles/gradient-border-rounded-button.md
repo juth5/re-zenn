@@ -9,11 +9,10 @@ published: true
 
 # 初めに
 CSSを用いて、ボーダーがグラデーションの角丸ボタンを作りたい時はありませんか？これを作るには、少し工夫が必要みたいです。
-![](https://storage.googleapis.com/zenn-user-upload/33ee23676595-20230415.png)
+![](https://storage.googleapis.com/zenn-user-upload/b9d730b73da9-20230418.png)
 # 上手くいかなかった実装例
 私は、まずボーダーがグラデーションの四角のボタンを作り、その角を丸めれば実現できると考え以下のようなボタンを作成しました。
-![](https://storage.googleapis.com/zenn-user-upload/32c34838cc67-20230415.png)
-
+![](https://storage.googleapis.com/zenn-user-upload/f5be9c9d74be-20230418.png)
 HTMLでボタンを作成
 ```
 <button class="button">button</button>
@@ -45,11 +44,10 @@ CSSでスタイルを設定
 ```
 ですが、これでは丸くなりませんでした。
 
-![](https://storage.googleapis.com/zenn-user-upload/32c34838cc67-20230415.png)
-
+![](https://storage.googleapis.com/zenn-user-upload/f5be9c9d74be-20230418.png)
 
 別の方法を調べた結果、グラデーションが一面にかかった要素にグラデーションがかかっていない要素を重ねることで実現できました。
-以下は実装例です。
+
 # 上手くいった実装例
 
 HTML
@@ -82,8 +80,7 @@ CSS
 
 グラデーションがかかっていない要素(inner-buttonクラスが当たっている要素)を重ねることで、以下のようなボタンが実現できました。
 
-![](https://storage.googleapis.com/zenn-user-upload/33ee23676595-20230415.png)
-
+![](https://storage.googleapis.com/zenn-user-upload/b9d730b73da9-20230418.png)
 ボーダーの太さは、outer-buttonクラスが当たっている要素にpaddingを付与することで調整ができます。
 
 # 最後に
