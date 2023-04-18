@@ -76,7 +76,7 @@ CSS
 }
 ```
 グラデーションが一面にかかった要素(outer-buttonクラスが当たっている要素)に、
-![](https://storage.googleapis.com/zenn-user-upload/557fe15396af-20230415.png)
+![](https://storage.googleapis.com/zenn-user-upload/e92696aca9e1-20230418.png)
 
 グラデーションがかかっていない要素(inner-buttonクラスが当たっている要素)を重ねることで、以下のようなボタンが実現できました。
 
