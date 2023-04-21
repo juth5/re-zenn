@@ -4,7 +4,7 @@ emoji: "🤳"
 type: "tech"
 topics: ["rabee"]
 publication_name: "rabee"
-published: true
+published: false
 ---
 
 # 初めに
@@ -16,17 +16,15 @@ published: true
 1. デベロッパーツールを起動します
 
 2. More ToolsからNetwork conditionsを開く
-デベロッパーツールを起動して、右隅の「･･･」アイコンをクリックしすると以下のようなメニューが開くので、「その他のツール」から「ネットワーク状態」をクリックしてください。
-![](https://storage.googleapis.com/zenn-user-upload/95b4d7c5ece5-20230421.png)
+デベロッパーツールを起動して、右隅の「･･･」アイコンをクリックすると以下のようなメニューが開くので、「その他のツール」から「ネットワーク状態」をクリックしてください。
+![](https://storage.googleapis.com/zenn-user-upload/a533256b393f-20230421.png)
 
 3. select automaticallyのチェックを外す
-![](https://storage.googleapis.com/zenn-user-upload/ff013a31809d-20230421.png)
+![](https://storage.googleapis.com/zenn-user-upload/6c6cc643bb94-20230421.png)
 パネルの箇所に、ネットワーク状態のタブが表示されことを確認し、ブラウザのデフォルトを仕様のチェックを外してください。
 4. UserAgentを変える
 User-Agentを選択できるので必要なものに変更してください。
-![](https://storage.googleapis.com/zenn-user-upload/7f36b426c172-20230421.png)
-
-# 上手くいった実装例
-
+![](https://storage.googleapis.com/zenn-user-upload/53bd77ed3e44-20230421.png)
+5. 変更後、デベロッパーツールを開いた状態でリロードすればUserAgentを偽装することができます。
 
 # 最後に
