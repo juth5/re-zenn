@@ -17,7 +17,7 @@ published: false
 
 2. More ToolsからNetwork conditionsを開く
 デベロッパーツールを起動して、右隅の「･･･」アイコンをクリックすると以下のようなメニューが開くので、「その他のツール」から「ネットワーク状態」をクリックしてください。
-![](https://storage.googleapis.com/zenn-user-upload/a533256b393f-20230421.png)
+![](https://storage.googleapis.com/zenn-user-upload/d1886c8905ba-20230421.png)
 
 3. select automaticallyのチェックを外す
 ![](https://storage.googleapis.com/zenn-user-upload/6c6cc643bb94-20230421.png)
