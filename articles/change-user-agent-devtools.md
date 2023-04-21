@@ -15,15 +15,13 @@ published: false
 
 1. デベロッパーツールを起動します
 
-2. More ToolsからNetwork conditionsを開く
+2. ネットワーク状態を開く
 デベロッパーツールを起動して、右隅の「･･･」アイコンをクリックすると以下のようなメニューが開くので、「その他のツール」から「ネットワーク状態」をクリックしてください。
 ![](https://storage.googleapis.com/zenn-user-upload/d1886c8905ba-20230421.png)
 
 3. ブラウザのデフォルトを使用のチェックを外す
-![](https://storage.googleapis.com/zenn-user-upload/b106abe8f47c-20230421.png)
-ネットワーク状態のタブを選択して、
-![](https://storage.googleapis.com/zenn-user-upload/ec4f11b9e502-20230421.png)
-ブラウザのデフォルトを使用のチェックを外してください。
+ネットワーク状態のタブを選択して、ブラウザのデフォルトを使用のチェックを外してください。
+![](https://storage.googleapis.com/zenn-user-upload/939f71190f6c-20230421.png)
 
 4. UserAgentを変える
 ブラウザのデフォルトを使用のチェックを外すと、User-Agentを選択できるので必要なものに変更してください。
