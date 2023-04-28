@@ -1,16 +1,16 @@
 ---
-title: "デベロッパーツールでUser-Agentを偽装する方法"
+title: "デベロッパーツールでUser-AgentをGooglebotに偽装する方法"
 emoji: "🤳"
 type: "tech"
-topics: ["rabee"]
+topics: ["rabee", "googlechrome", "frontend"]
 publication_name: "rabee"
 published: false
 ---
 
 # 初めに
-最近、SEO対策の一環として、User-Agentがbotの場合に特定の処理を行わないようにする実装を行いました。この記事では、Google Chromeのデベロッパーツールを使ってUser-Agentを偽装する方法を紹介します。
+SEO対策の一環としてUser-AgentがGooglebot(bot)の場合に特定の処理を行わないようにする実装を行いました。その際の動作検証で、Google ChromeのデベロッパーツールでUser-AgentをGooglebot(bot)に偽装する方法を知ったのでその方法を紹介します。
 # User-Agentとは
-ユーザーエージェント（User-Agent）とは、インターネットを閲覧しているユーザーの、デバイス・OS・ブラウザなどの情報のことです。
+ユーザーエージェント（User-Agent）とは、インターネットを閲覧しているユーザーの、デバイス・OS・ブラウザなどの情報のことです。一般的なインターネットブラウザを使い、HTTPに基づきサイトなどにアクセスした際には、ユーザーエージェントに関する各種情報が、相手側に通知される仕組みとなっているためアクセス解析に使われたりもします。
 # ChromeでUser-Agentを変更する方法
 
 1. デベロッパーツールを起動します
@@ -29,3 +29,4 @@ published: false
 5. 変更後、デベロッパーツールを開いた状態でリロードすればUserAgentを偽装することができます。
 
 # 最後に
+Google Chromeのデベロッパーツールを使用してUser-Agentを偽装する方法を紹介しました。この方法を利用することで、実装したSEO対策がGooglebot(bot)に適切に機能しているかどうかを確認することができます。参考にしていただけると幸いです。
