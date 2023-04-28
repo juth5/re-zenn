@@ -21,8 +21,7 @@ SEO対策の一環としてUser-AgentがGooglebot(bot)の場合に特定の処�
 ![](https://storage.googleapis.com/zenn-user-upload/217946591a9d-20230428.png)
 3. ブラウザのデフォルトを使用のチェックを外す
 ネットワーク状態のタブを選択して、ブラウザのデフォルトを使用のチェックを外してください。
-![](https://storage.googleapis.com/zenn-user-upload/ea6d7d78b197-20230421.png)
-
+![](https://storage.googleapis.com/zenn-user-upload/b09373fcfedf-20230428.png)
 4. UserAgentを変える
 ブラウザのデフォルトを使用のチェックを外すと、User-Agentを選択できるので必要なものに変更してください。
 ![](https://storage.googleapis.com/zenn-user-upload/53bd77ed3e44-20230421.png)
