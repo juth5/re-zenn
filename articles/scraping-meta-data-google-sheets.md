@@ -1,5 +1,5 @@
 ---
-title: "GoogleスプレットシートでWebサイトのmeta情報を書き出す方法"
+title: "GoogleスプレットシートでWebサイトのmeta情報を抽出する方法"
 emoji: "📂"
 type: "tech"
 topics: ["rabee", "googlesheets", "frontend"]
