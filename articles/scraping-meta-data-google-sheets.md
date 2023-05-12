@@ -30,10 +30,10 @@ descriptionの場合は、以下のように関数を入力します。
 
 # その他
 
-| データ | 関数   |
+| データ | 入力例   |
 |---------|--------|
-| meta og:image    | =IMPORTXML(A1,”//meta[@property=’og:image’]/@content”) |
-| meta keywords  | =IMPORTXML(A1,”//meta[@name=’keywords’]/@content”)   |
+| meta og:image    | =IMPORTXML(URL,”//meta[@property=’og:image’]/@content”) |
+| meta keywords  | =IMPORTXML(URL,”//meta[@name=’keywords’]/@content”)   |
 | canonical URL| =IMPORTXML(URL,”//link[@rel=’canonical’]/@href”) |
 
 # 最後に
