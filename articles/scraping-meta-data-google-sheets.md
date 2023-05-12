@@ -30,11 +30,11 @@ descriptionの場合は、以下のように関数を入力します。
 
 # その他
 
-| カテゴリ | 名称   |
+| データ | 関数   |
 |---------|--------|
-| 果物    | りんご |
-| おかし  | あめ   |
-| ジュース| コーラ |
+| meta og:image    | =IMPORTXML(A1,”//meta[@property=’og:image’]/@content”) |
+| meta keywords  | =IMPORTXML(A1,”//meta[@name=’keywords’]/@content”)   |
+| canonical URL| =IMPORTXML(URL,”//link[@rel=’canonical’]/@href”) |
 
 # 最後に
 この記事では、Googleスプレッドシートを活用してWebサイトのメタ情報を抽出する方法について詳しく解説しました。カスタム関数やスクリプトを使用することで、短時間で多くのWebページからメタ情報を取得し、スプレッドシート上で編集・整理することができます。この手法は、SEO分析や競合サイトの調査、コンテンツの概要把握に役立ちます。また、クラウドベースのGoogleスプレッドシートを使用することで、データの共有やコラボレーションが容易になります。
