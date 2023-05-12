@@ -11,22 +11,22 @@ published: false
 Webサイトのメタ情報は、検索エンジン最適化（SEO）やコンテンツの概要把握に非常に重要な役割を果たしています。メタ情報を抽出することで、競合サイトのSEO戦略や、特定のキーワードをターゲットにしたコンテンツの分析が可能になります。しかし、多くのWebページからメタ情報を効率的に収集・整理するには、適切なツールや技術が必要です。この記事では、Googleスプレッドシートを使用してWebサイトのメタ情報を抽出する方法を解説します。
 # IMPORTXML関数について
 IMPORTXML関数は、XML、HTML、CSV、TSV、RSS フィード、Atom XML フィードなど、さまざまな種類の構造化データからデータをインポートできるGoogleスプレッドシートの関数です。
-構文はこのようになります。
+構文は以下のようになります。
 ```
-IMPORTXML(url, xpath_query)
+IMPORTXML(URL, xpath_query)
 ```
-# メタ情報のtitleを抽出
+# メタ情報の抽出方法
 Webサイトのメタ情報のタイトルを抽出する際は以下のように関数を入力します。
 ```
 =IMPORTXML(URL, "//title")
 ```
-# メタ情報のdescriptionを抽出
+![](https://storage.googleapis.com/zenn-user-upload/02bfbc0cf9c4-20230512.png)
 descriptionの場合は、以下のように関数を入力します。
 ```
 =IMPORTXML(URL, "//meta[@name='description']/@content")
 ```
+![](https://storage.googleapis.com/zenn-user-upload/ef2650451e28-20230512.png)
 
-# サンプル
 
 
 # 最後に
