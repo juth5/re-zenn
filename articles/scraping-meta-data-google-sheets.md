@@ -29,6 +29,9 @@ descriptionの場合は、以下のように関数を入力します。
 ![](https://storage.googleapis.com/zenn-user-upload/ef2650451e28-20230512.png)
 
 # その他
+
+| カテゴリ | 名称   |
+|---------|--------|
 | 果物    | りんご |
 | おかし  | あめ   |
 | ジュース| コーラ |
