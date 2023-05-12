@@ -16,6 +16,7 @@ IMPORTXML関数は、XML、HTML、CSV、TSV、RSS フィード、Atom XML フィ
 IMPORTXML(URL, xpath_query)
 ```
 # メタ情報の抽出方法
+例としてトヨタ自動車のHPのメタ情報を抽出してみたいと思います。
 Webサイトのメタ情報のタイトルを抽出する際は以下のように関数を入力します。
 ```
 =IMPORTXML(URL, "//title")
