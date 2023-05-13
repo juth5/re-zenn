@@ -21,15 +21,16 @@ Webサイトのメタ情報のタイトルを抽出する際は以下のよう�
 ```
 =IMPORTXML(URL, "//title")
 ```
-![](https://storage.googleapis.com/zenn-user-upload/02bfbc0cf9c4-20230512.png)
+![](https://storage.googleapis.com/zenn-user-upload/4ad83e247977-20230513.png)
 descriptionの場合は、以下のように関数を入力します。
 ```
 =IMPORTXML(URL, "//meta[@name='description']/@content")
 ```
-![](https://storage.googleapis.com/zenn-user-upload/ef2650451e28-20230512.png)
+![](https://storage.googleapis.com/zenn-user-upload/db58103fe889-20230513.png)
 
+このように、URLさえ指定すればWebサイトのmeta情報を一括で抽出することができます。
 # その他
-
+その他、主要なmeta情報取得の関数の記載方法をまとめています。
 | データ | 入力例   |
 |---------|--------|
 | meta og:image    | =IMPORTXML(URL,”//meta[@property=’og:image’]/@content”) |
