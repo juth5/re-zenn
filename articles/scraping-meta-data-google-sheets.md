@@ -1,5 +1,5 @@
 ---
-title: "GoogleスプレッドシートでWebサイトのmeta情報を抽出する方法"
+title: "GoogleスプレッドシートでWebサイトのメタ情報を抽出する方法"
 emoji: "📂"
 type: "tech"
 topics: ["rabee", "googlesheets", "frontend"]
@@ -28,9 +28,9 @@ descriptionの場合は、以下のように関数を入力します。
 ```
 ![](https://storage.googleapis.com/zenn-user-upload/db58103fe889-20230513.png)
 
-このように、URLさえ指定すればWebサイトのmeta情報を一括で抽出することができます。
+このように、URLさえ指定すればWebサイトのメタ情報を一括で抽出することができます。
 # その他のメタ情報について
-その他、主要なmeta情報取得の関数の記載方法をまとめています。
+その他、主要なメタ情報取得の関数の記載方法をまとめています。
 | データ | 入力例   |
 |---------|--------|
 | meta og:image    | =IMPORTXML(URL,”//meta[@property=’og:image’]/@content”) |
