@@ -48,11 +48,11 @@ XPathでは属性を『@』関数で表します。
 ```
 抽象化すると以下のようになります。
 ```
-//タグ名[@属性名=”属性値”]
+//タグ名[@属性名="属性値"]
 ```
 また、同じ属性を持つすべての要素を取得する場合は、
 ```
-//*[@属性名=”属性値”]
+//*[@属性名="属性値"]
 ```
 のように書きます。
 
@@ -76,9 +76,9 @@ descriptionの場合は、以下のように関数を入力します。
 その他、主要なメタ情報取得の関数の記載方法をまとめています。
 | データ | 入力例   |
 |---------|--------|
-| meta og:image    | =IMPORTXML(URL,”//meta[@property=’og:image’]/@content”) |
-| meta keywords  | =IMPORTXML(URL,”//meta[@name=’keywords’]/@content”)   |
-| canonical URL| =IMPORTXML(URL,”//link[@rel=’canonical’]/@href”) |
+| meta og:image    | =IMPORTXML(URL,"//meta[@property=’og:image’]/@content") |
+| meta keywords  | =IMPORTXML(URL,"//meta[@name=’keywords’]/@content")   |
+| canonical URL| =IMPORTXML(URL,"//link[@rel=’canonical’]/@href") |
 
 # 最後に
 この記事では、Googleスプレッドシートを活用してWebサイトのメタ情報を抽出する方法について詳しく解説しました。カスタム関数やスクリプトを使用することで、短時間で多くのWebページからメタ情報を取得し、スプレッドシート上で編集・整理することができます。この手法は、SEO分析や競合サイトの調査、コンテンツの概要把握に役立ちます。また、クラウドベースのGoogleスプレッドシートを使用することで、データの共有やコラボレーションが容易になります。
