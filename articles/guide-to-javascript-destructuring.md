@@ -71,6 +71,33 @@ console.log(users);
   "age": 20
 }
 ```
+また、このように複数受け取ることも可能です。
+```
+let { contents: { users, animals } } = {
+  contents: {
+    users: {
+      name: 'takashi',
+      age: 20,
+    },
+    animals: {
+      name: 'rion',
+      age: 10,
+    },
+  }
+};
+console.log(users);
+// =>　{
+  "name": "takashi",
+  "age": 20
+}
+console.log(animals);
+// => {
+  name: 'rion',
+  age: 10,
+}
+
+```
+https://runstant.com/fukagawa/projects/6ace5bf9
 # メタ情報の抽出方法
 
 # その他のメタ情報について
