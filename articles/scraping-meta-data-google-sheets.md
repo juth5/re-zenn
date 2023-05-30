@@ -39,8 +39,9 @@ IMPORTXML関数は、XML、HTML、CSV、TSV、RSS フィード、Atom XML フィ
 IMPORTXML(URL, xpath_query)
 ```
 xpath_queryには、Xpathを用いて取得したデータを指定します。
+
 Xpathについては以下の記事をお読みください。
-https://zenn.dev/rabee/articles/scraping-meta-data-google-sheets
+https://www.octoparse.jp/blog/xpath-introduction
 
 # 最後に
 この記事では、Googleスプレッドシートを活用してWebサイトのメタ情報を抽出する方法について詳しく解説しました。カスタム関数やスクリプトを使用することで、短時間で多くのWebページからメタ情報を取得し、スプレッドシート上で編集・整理することができます。この手法は、SEO分析や競合サイトの調査、コンテンツの概要把握に役立ちます。また、クラウドベースのGoogleスプレッドシートを使用することで、データの共有やコラボレーションが容易になります。
