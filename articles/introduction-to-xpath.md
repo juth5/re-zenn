@@ -1,6 +1,6 @@
 ---
 title: "XPath入門"
-emoji: "📂"
+emoji: "📄"
 type: "tech"
 topics: ["rabee", "frontend"]
 publication_name: "rabee"
