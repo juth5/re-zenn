@@ -1,5 +1,5 @@
 ---
-title: "XPath入門"
+title: "XPathについて"
 emoji: "📄"
 type: "tech"
 topics: ["rabee", "frontend"]
