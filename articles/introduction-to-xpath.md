@@ -30,7 +30,7 @@ XPath（XML Path Language）とは、XML文書内の要素や属性を選択す�
 //article/h1
 ```
 ## 属性で指定する場合
-次に属性を指定して情報を抽出する方法を見ていきましょう。XPathでは属性を"@"で表現します。例えば、以下のHTML文書がある場合
+次に属性を指定して情報を抽出する方法を見ていきましょう。XPathでは属性を"@"で表現します。例えば、以下のようなHTML文書があります。
 ```js
 <div>
   <article>
@@ -57,6 +57,7 @@ XPath（XML Path Language）とは、XML文書内の要素や属性を選択す�
 
 ## クラスで指定する場合
 ```
+例えば、以下のようなHTML文書があります。
 <div>
   <article class='featured'>
     <h1>コーヒーショップ</h1>
@@ -70,7 +71,7 @@ XPath（XML Path Language）とは、XML文書内の要素や属性を選択す�
 //article[@class='featured']
 ```
 ### ネストされた要素で指定する場合
-XPathはネストされた要素の抽出にも非常に便利です。以下のようなHTML文書を考えてみましょう。
+XPathはネストされた要素の抽出にも非常に便利です。以下のようなHTML文書があります。
 ```
 <div>
   <ul id='menu'>
