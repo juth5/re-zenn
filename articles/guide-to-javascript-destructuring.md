@@ -8,6 +8,8 @@ published: false
 ---
 
 # 始めに
+JavaScriptではオブジェクトの分割代入を利用すると、オブジェクトから特定のプロパティを取り出し、それらを個別の変数に代入することができます。
+オブジェクトの場合、分割代入はオブジェクトのプロパティ名に基づいて行われます。
 # 例
 データ取得の際に、以下のような形のオブジェクトが返ってくるとします。
 ```
@@ -24,7 +26,7 @@ published: false
   }
 };
 ```
-分割代入によって
+分割代入によって受け取ると
 ```
 let { contents } = {
   contents: {
@@ -50,8 +52,10 @@ console.log(contents);
     "age": 10
   },
 ```
+このようになります。
 
-分割代入によって
+
+さらに、usersというキーのバリューを分割代入によって受け取るには以下のように書きます。
 ```
 let { contents: { users } } = {
   contents: {
@@ -96,9 +100,24 @@ console.log(animals);
   age: 10,
 }
 
+分割代入を行う際のデフォルト値について
+例えばこのような場合があります。
 ```
-https://runstant.com/fukagawa/projects/6ace5bf9
-# メタ情報の抽出方法
+let [{ collection }, { project }] = [{collection: {id: 'abcd', name: 'hoge'}}, {project: { id: '12345', name: 'fuga' }}];
+```
+上記では、collectionとprojectの変数に分割代入されます。
 
-# その他のメタ情報について
+ですが、以下のような場合エラーが発生します。
+```
+let [{ collection }, { project }] = [{collection: {id: 'abcd', name: 'hoge'}}];
+```
+"Cannot read properties of undefined (reading 'project')"となります。
+これを回避するためには、projectにデフォルト値を設定します。
+```
+let [{ collection }, { project }={}] = [{collection: {id: 'abcd', name: 'hoge'}}];
+```
+こうすることで、projectがない場合でもエラーを回避することができます。
+
+
+https://runstant.com/fukagawa/projects/6ace5bf9
 # 最後に
