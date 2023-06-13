@@ -76,6 +76,7 @@ console.log(users);
 }
 ```
 また、このように複数受け取ることも可能です。
+
 ```
 let { contents: { users, animals } } = {
   contents: {
@@ -99,7 +100,7 @@ console.log(animals);
   name: 'rion',
   age: 10,
 }
-
+```
 分割代入を行う際のデフォルト値について
 例えばこのような場合があります。
 ```
