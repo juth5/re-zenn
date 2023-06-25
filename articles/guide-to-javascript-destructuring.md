@@ -20,7 +20,7 @@ JavaScriptではオブジェクトの分割代入を利用すると、オブジ�
       age: 20,
     },
     animals: {
-      name: 'rion',
+      name: 'lion',
       age: 10,
     },
   }
@@ -35,7 +35,7 @@ let { contents } = {
       age: 20,
     },
     animals: {
-      name: 'rion',
+      name: 'lion',
       age: 10,
     },
   }
@@ -43,14 +43,14 @@ let { contents } = {
 
 console.log(contents);
 // =>　{
-  "users": {
-    "name": "takashi",
-    "age": 20
-  },
-  "animals": {
-    "name": "rion",
-    "age": 10
-  },
+//   "users": {
+//     "name": "takashi",
+//     "age": 20
+//   },
+//   "animals": {
+//     "name": "lion",
+//     "age": 10
+//   },
 ```
 このようになります。
 
@@ -64,16 +64,16 @@ let { contents: { users } } = {
       age: 20,
     },
     animals: {
-      name: 'rion',
+      name: 'lion',
       age: 10,
     },
   }
 };
 console.log(users);
 // =>　{
-  "name": "takashi",
-  "age": 20
-}
+//   "name": "takashi",
+//   "age": 20
+// }
 ```
 また、このように複数受け取ることも可能です。
 
@@ -85,37 +85,53 @@ let { contents: { users, animals } } = {
       age: 20,
     },
     animals: {
-      name: 'rion',
+      name: 'lion',
       age: 10,
     },
   }
 };
 console.log(users);
 // =>　{
-  "name": "takashi",
-  "age": 20
-}
+//   "name": "takashi",
+//   "age": 20
+// }
 console.log(animals);
 // => {
-  name: 'rion',
-  age: 10,
-}
+//   name: 'lion',
+//   age: 10,
+// }
 ```
 分割代入を行う際のデフォルト値について
 例えばこのような場合があります。
 ```js
-let [{ collection }, { project }] = [{collection: {id: 'abcd', name: 'hoge'}}, {project: { id: '12345', name: 'fuga' }}];
+let [
+  { collection }, 
+  { project }
+] = [
+  { collection: { id: 'abcd', name: 'hoge' } }, 
+   {project: { id: '12345', name: 'fuga' } }
+];
 ```
 上記では、collectionとprojectの変数に分割代入されます。
 
 ですが、以下のような場合エラーが発生します。
 ```js
-let [{ collection }, { project }] = [{collection: {id: 'abcd', name: 'hoge'}}];
+let [
+  { collection }, 
+  { project }
+] = [
+  { collection: { id: 'abcd', name: 'hoge' } }
+];
 ```
 "Cannot read properties of undefined (reading 'project')"となります。
 これを回避するためには、projectにデフォルト値を設定します。
 ```js
-let [{ collection }, { project }={}] = [{collection: {id: 'abcd', name: 'hoge'}}];
+let [
+  { collection }, 
+  { project }  = {}
+] = [
+  { collection: { id: 'abcd', name: 'hoge' } }
+];
 ```
 こうすることで、projectがない場合でもエラーを回避することができます。
 
